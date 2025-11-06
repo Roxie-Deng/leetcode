@@ -6,11 +6,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/Roxie-Deng/leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Roxie-Deng/leetcode/tree/master/0015-3sum) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Roxie-Deng/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 ## Two Pointers
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/Roxie-Deng/leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Roxie-Deng/leetcode/tree/master/0015-3sum) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Roxie-Deng/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 ## Binary Search
@@ -21,4 +23,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Roxie-Deng/leetcode/tree/master/0015-3sum) |
+## Greedy
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/Roxie-Deng/leetcode/tree/master/0011-container-with-most-water) |
 <!---LeetCode Topics End-->
