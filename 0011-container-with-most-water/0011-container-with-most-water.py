@@ -1,7 +1,7 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
          # find maximum of: min(height[l],height[r])*(r-l)
-        cur_max = a = 0
+        cur_max = a = h = 0
         n = len(height)
 
         # left, right pointers move towards each other to decrease (r-l)
