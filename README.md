@@ -121,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Roxie-Deng/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Roxie-Deng/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0131-palindrome-partitioning](https://github.com/Roxie-Deng/leetcode/tree/master/0131-palindrome-partitioning) |
 ## Linked List
 |  |
 | ------- |
@@ -160,8 +161,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Roxie-Deng/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0078-subsets](https://github.com/Roxie-Deng/leetcode/tree/master/0078-subsets) |
+| [0131-palindrome-partitioning](https://github.com/Roxie-Deng/leetcode/tree/master/0131-palindrome-partitioning) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [0078-subsets](https://github.com/Roxie-Deng/leetcode/tree/master/0078-subsets) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0131-palindrome-partitioning](https://github.com/Roxie-Deng/leetcode/tree/master/0131-palindrome-partitioning) |
 <!---LeetCode Topics End-->
