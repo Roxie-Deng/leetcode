@@ -8,3 +8,5 @@ class Solution:
             max_diff = max(p-min_price, max_diff)
 
         return max_diff
+
+        # O(n); O(1)
