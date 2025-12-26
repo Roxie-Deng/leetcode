@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Roxie-Deng/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/Roxie-Deng/leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0713-subarray-product-less-than-k](https://github.com/Roxie-Deng/leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [1287-element-appearing-more-than-25-in-sorted-array](https://github.com/Roxie-Deng/leetcode/tree/master/1287-element-appearing-more-than-25-in-sorted-array) |
 ## Two Pointers
 |  |
 | ------- |
