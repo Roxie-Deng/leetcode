@@ -128,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Roxie-Deng/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Roxie-Deng/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0020-valid-parentheses](https://github.com/Roxie-Deng/leetcode/tree/master/0020-valid-parentheses) |
 | [0131-palindrome-partitioning](https://github.com/Roxie-Deng/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0415-add-strings](https://github.com/Roxie-Deng/leetcode/tree/master/0415-add-strings) |
 | [3019-number-of-changing-keys](https://github.com/Roxie-Deng/leetcode/tree/master/3019-number-of-changing-keys) |
@@ -153,6 +154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/Roxie-Deng/leetcode/tree/master/0020-valid-parentheses) |
 | [0094-binary-tree-inorder-traversal](https://github.com/Roxie-Deng/leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0143-reorder-list](https://github.com/Roxie-Deng/leetcode/tree/master/0143-reorder-list) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Roxie-Deng/leetcode/tree/master/0144-binary-tree-preorder-traversal) |
