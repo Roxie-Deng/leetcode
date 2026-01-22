@@ -24,3 +24,4 @@ class Solution:
             cur.next = list2
         
         return dummy.next
+        # O(n);O(1)
