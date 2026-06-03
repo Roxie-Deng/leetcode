@@ -207,12 +207,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/Roxie-Deng/leetcode/tree/master/0055-jump-game) |
+| [0070-climbing-stairs](https://github.com/Roxie-Deng/leetcode/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Roxie-Deng/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Roxie-Deng/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0131-palindrome-partitioning](https://github.com/Roxie-Deng/leetcode/tree/master/0131-palindrome-partitioning) |
 ## Math
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/Roxie-Deng/leetcode/tree/master/0070-climbing-stairs) |
 | [0415-add-strings](https://github.com/Roxie-Deng/leetcode/tree/master/0415-add-strings) |
 ## Simulation
 |  |
@@ -234,4 +236,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0661-image-smoother](https://github.com/Roxie-Deng/leetcode/tree/master/0661-image-smoother) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/Roxie-Deng/leetcode/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
