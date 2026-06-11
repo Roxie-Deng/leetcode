@@ -5,7 +5,7 @@ class MinStack:
     def push(self, val: int) -> None:
         self.stack.append((val, min(val,self.stack[-1][1])))
 
-    def pop(self) -> None:
+    def pop(self) -> None: # 内置pop()只能无参或者整数参
         self.stack.pop()
 
     def top(self) -> int:
