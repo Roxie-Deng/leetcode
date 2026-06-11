@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/Roxie-Deng/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0661-image-smoother](https://github.com/Roxie-Deng/leetcode/tree/master/0661-image-smoother) |
 | [0713-subarray-product-less-than-k](https://github.com/Roxie-Deng/leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [0739-daily-temperatures](https://github.com/Roxie-Deng/leetcode/tree/master/0739-daily-temperatures) |
 | [1287-element-appearing-more-than-25-in-sorted-array](https://github.com/Roxie-Deng/leetcode/tree/master/1287-element-appearing-more-than-25-in-sorted-array) |
 | [1472-design-browser-history](https://github.com/Roxie-Deng/leetcode/tree/master/1472-design-browser-history) |
 ## Two Pointers
@@ -192,6 +193,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/Roxie-Deng/leetcode/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/Roxie-Deng/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/Roxie-Deng/leetcode/tree/master/0394-decode-string) |
+| [0739-daily-temperatures](https://github.com/Roxie-Deng/leetcode/tree/master/0739-daily-temperatures) |
 | [1472-design-browser-history](https://github.com/Roxie-Deng/leetcode/tree/master/1472-design-browser-history) |
 ## Breadth-First Search
 |  |
@@ -268,4 +270,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0139-word-break](https://github.com/Roxie-Deng/leetcode/tree/master/0139-word-break) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0739-daily-temperatures](https://github.com/Roxie-Deng/leetcode/tree/master/0739-daily-temperatures) |
 <!---LeetCode Topics End-->
