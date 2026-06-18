@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Roxie-Deng/leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/Roxie-Deng/leetcode/tree/master/0162-find-peak-element) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Roxie-Deng/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0169-majority-element](https://github.com/Roxie-Deng/leetcode/tree/master/0169-majority-element) |
 | [0198-house-robber](https://github.com/Roxie-Deng/leetcode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/Roxie-Deng/leetcode/tree/master/0200-number-of-islands) |
 | [0209-minimum-size-subarray-sum](https://github.com/Roxie-Deng/leetcode/tree/master/0209-minimum-size-subarray-sum) |
@@ -68,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/Roxie-Deng/leetcode/tree/master/0015-3sum) |
 | [0056-merge-intervals](https://github.com/Roxie-Deng/leetcode/tree/master/0056-merge-intervals) |
+| [0169-majority-element](https://github.com/Roxie-Deng/leetcode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Roxie-Deng/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/Roxie-Deng/leetcode/tree/master/0347-top-k-frequent-elements) |
 ## Greedy
@@ -157,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0139-word-break](https://github.com/Roxie-Deng/leetcode/tree/master/0139-word-break) |
 | [0142-linked-list-cycle-ii](https://github.com/Roxie-Deng/leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Roxie-Deng/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
+| [0169-majority-element](https://github.com/Roxie-Deng/leetcode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/Roxie-Deng/leetcode/tree/master/0347-top-k-frequent-elements) |
 ## String
 |  |
@@ -293,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Divide and Conquer
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/Roxie-Deng/leetcode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Roxie-Deng/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/Roxie-Deng/leetcode/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
@@ -312,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/Roxie-Deng/leetcode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/Roxie-Deng/leetcode/tree/master/0347-top-k-frequent-elements) |
 ## Union-Find
 |  |
