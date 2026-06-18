@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0661-image-smoother](https://github.com/Roxie-Deng/leetcode/tree/master/0661-image-smoother) |
 | [0713-subarray-product-less-than-k](https://github.com/Roxie-Deng/leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0739-daily-temperatures](https://github.com/Roxie-Deng/leetcode/tree/master/0739-daily-temperatures) |
+| [0994-rotting-oranges](https://github.com/Roxie-Deng/leetcode/tree/master/0994-rotting-oranges) |
 | [1287-element-appearing-more-than-25-in-sorted-array](https://github.com/Roxie-Deng/leetcode/tree/master/1287-element-appearing-more-than-25-in-sorted-array) |
 | [1472-design-browser-history](https://github.com/Roxie-Deng/leetcode/tree/master/1472-design-browser-history) |
 ## Two Pointers
@@ -218,6 +219,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0279-perfect-squares](https://github.com/Roxie-Deng/leetcode/tree/master/0279-perfect-squares) |
 | [0322-coin-change](https://github.com/Roxie-Deng/leetcode/tree/master/0322-coin-change) |
 | [0513-find-bottom-left-tree-value](https://github.com/Roxie-Deng/leetcode/tree/master/0513-find-bottom-left-tree-value) |
+| [0994-rotting-oranges](https://github.com/Roxie-Deng/leetcode/tree/master/0994-rotting-oranges) |
 ## Backtracking
 |  |
 | ------- |
@@ -272,6 +274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0200-number-of-islands](https://github.com/Roxie-Deng/leetcode/tree/master/0200-number-of-islands) |
 | [0661-image-smoother](https://github.com/Roxie-Deng/leetcode/tree/master/0661-image-smoother) |
+| [0994-rotting-oranges](https://github.com/Roxie-Deng/leetcode/tree/master/0994-rotting-oranges) |
 ## Memoization
 |  |
 | ------- |
