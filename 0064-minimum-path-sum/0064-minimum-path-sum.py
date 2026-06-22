@@ -6,7 +6,7 @@ class Solution:
         '''
         # 新建一个m行n列的空白表格
         m,n = len(grid),len(grid[0])
-        dp = [[0] * n for _ in range(m)] # dp = [[0]*n]*m如果用*m会复制第一行整个列表引用
+        dp = [[0] * n for _ in range(m)] # dp = [[0]*n]*m如果用*m会复制第一行整个列表引用,浅拷贝,只复制外层对象，内部嵌套对象仍然共享引用
 
         dp[0][0] = grid[0][0]
 
