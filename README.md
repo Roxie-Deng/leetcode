@@ -271,6 +271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/Roxie-Deng/leetcode/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/Roxie-Deng/leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/Roxie-Deng/leetcode/tree/master/0070-climbing-stairs) |
 | [0118-pascals-triangle](https://github.com/Roxie-Deng/leetcode/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Roxie-Deng/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -286,6 +287,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/Roxie-Deng/leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/Roxie-Deng/leetcode/tree/master/0070-climbing-stairs) |
 | [0279-perfect-squares](https://github.com/Roxie-Deng/leetcode/tree/master/0279-perfect-squares) |
 | [0415-add-strings](https://github.com/Roxie-Deng/leetcode/tree/master/0415-add-strings) |
@@ -371,4 +373,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/Roxie-Deng/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Roxie-Deng/leetcode/tree/master/0210-course-schedule-ii) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/Roxie-Deng/leetcode/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
