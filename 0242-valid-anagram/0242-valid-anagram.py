@@ -4,4 +4,4 @@ class Solution:
         cnt_t = Counter(t)
 
         return cnt_s == cnt_t
-        # O(n), O(n)
+        # O(n), O(dict_len)
