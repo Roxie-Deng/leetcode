@@ -166,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Roxie-Deng/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0209-minimum-size-subarray-sum](https://github.com/Roxie-Deng/leetcode/tree/master/0209-minimum-size-subarray-sum) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/Roxie-Deng/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0713-subarray-product-less-than-k](https://github.com/Roxie-Deng/leetcode/tree/master/0713-subarray-product-less-than-k) |
 ## Prefix Sum
 |  |
@@ -192,6 +193,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/Roxie-Deng/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/Roxie-Deng/leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/Roxie-Deng/leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/Roxie-Deng/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0560-subarray-sum-equals-k](https://github.com/Roxie-Deng/leetcode/tree/master/0560-subarray-sum-equals-k) |
 ## String
 |  |
@@ -207,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/Roxie-Deng/leetcode/tree/master/0242-valid-anagram) |
 | [0394-decode-string](https://github.com/Roxie-Deng/leetcode/tree/master/0394-decode-string) |
 | [0415-add-strings](https://github.com/Roxie-Deng/leetcode/tree/master/0415-add-strings) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/Roxie-Deng/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [3019-number-of-changing-keys](https://github.com/Roxie-Deng/leetcode/tree/master/3019-number-of-changing-keys) |
 ## Linked List
 |  |
