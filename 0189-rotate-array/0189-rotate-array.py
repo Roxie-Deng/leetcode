@@ -3,6 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        # 切片写法
         # k = k%len(nums)
         # nums[:] = nums[-k:] + nums[:-k]
         # 没修改引用但实际上在底层会创建临时代码
