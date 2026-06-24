@@ -12,4 +12,4 @@ class Solution:
                 left += 1
             longest = max(longest, right-left+1)
         return longest
-        # O(n)每个c最多被左右指针各访问一次;O(1)
+        # O(n)每个c最多被左右指针各访问一次;O(256)
