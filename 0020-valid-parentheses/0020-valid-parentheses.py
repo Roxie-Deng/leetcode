@@ -1,6 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         # 配对处理
+        '''
         def isPair(c1:str,c2:str) -> bool:
             pair = c1+c2
             if pair == "()" or pair == "[]" or pair == "{}":
@@ -24,3 +25,16 @@ class Solution:
                 ans.pop()
         return ans == []
         # O(n); O(n)
+        '''
+        # 继续优化：可以用映射表代替isPair辅助函数
+        mapping = {')': '(', ']': '[', '}': '{'}
+        stack = []
+
+        for c in s:
+            if c not in mapping: # 左括号
+                stack.append(c)
+            else: # 右括号
+                if not stack or stack[-1] != mapping[c]: # 栈为空或者不匹配
+                    return False
+                stack.pop()
+        return stack == []
