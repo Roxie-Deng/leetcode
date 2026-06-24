@@ -1,16 +1,15 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # dict: {char: occurence}
-        showed = defaultdict(int)
-        ans = 0
+        # hash+双指针
+        seen = defaultdict(int)
+        longest = 0
         left = 0
 
         for right,c in enumerate(s):
-            showed[c] += 1
-            # shrink the window: value>1
-            while showed[c] > 1:
-                showed[s[left]] -= 1
+            seen[c] += 1
+            while seen[c] > 1:
+                seen[s[left]] -= 1
                 left += 1
-            ans = max(ans, right-left+1)
-        
-        return ans
+            longest = max(longest, right-left+1)
+        return longest
+        # O(n)每个c最多被左右指针各访问一次;O(1)
