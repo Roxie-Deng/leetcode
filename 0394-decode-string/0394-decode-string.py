@@ -1,23 +1,27 @@
 class Solution:
     def decodeString(self, s: str) -> str:
-        # nested; full completion relies on the inner scope; temporarily store inner, restore outer later -> stack
-        # sub-problem -> recursion
-        k = 0 # repeat count on current bracket level
-        ans = '' # built_string on current bracket level
-        stack = [] # each element: (ans,k) tuple; "LIFO", the most inner barcket will be processed first, outer last; outer = outer_str + k* inner_str
-
+        # nested: decode inner[] first and store it, then decode outer[] and store it
+        # 先处理最内层[]，最内层会是在最后匹配到 -> stack
+        stack = [] # 记录[]前的str，还要记录[]前的int
+        # (repeat_num,cur_str)
+        repeat = 0
+        cur_str = ""
         for c in s:
-            if c.isalpha():
-                ans += c
-            elif c.isdigit():
-                k = k*10 + int(c) # accumulate consecutive digit characters to form k
-            elif c == "[": # recursion
-                stack.append((ans,k))
-                k = 0
-                ans = ''
-            else: # ']'
-                pre_ans, pre_k = stack.pop()
-                ans = pre_ans + pre_k*ans
-            
-        return ans
-        # O(n^depth);O(depth+n)
+            # int
+            if c.isdigit():
+                repeat = repeat*10 + int(c) # 一次只遍历一个字符，如果是两位数以上需要进行特殊处理
+            # [
+            elif c == "[":
+                stack.append((repeat,cur_str))
+                repeat = 0 # 重置
+                cur_str = ""
+            # ]
+            elif c == "]":
+                # 弹出最近一组
+                repeat_times, prev_str = stack.pop()
+                cur_str = prev_str + cur_str * repeat_times
+            # str
+            else:
+                cur_str += c # (3,"") (2,"a") 
+        return cur_str
+        # O(n);O(n)
