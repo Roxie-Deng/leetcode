@@ -5,6 +5,7 @@
 #         self.next = next
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        # 每次循环往末尾添加一个节点。在第一次循环时，我们无法往一个空节点的末尾添加节点。创建一个哨兵节点
         cur_val = 0
         carry = 0
         cur = dummy = ListNode()
