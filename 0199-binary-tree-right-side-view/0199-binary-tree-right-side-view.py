@@ -6,15 +6,22 @@
 #         self.right = right
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
-        # 记录每一层最右的节点，先右后左
-        ans = []
-        def dfs(node,depth): # 当前节点和所在层
-            if node is None:
-                return
-            if depth == len(ans):
-                ans.append(node.val)
-            dfs(node.right,depth+1)
-            dfs(node.left,depth+1)
-        dfs(root,0)
-        return ans
-    # O(n);O(depth)
+        # BFS每一层的最后一个值
+        if not root:
+            return []
+        q = deque([root])
+        res = []
+        while q:
+            n = len(q)
+            for i in range(n):
+                node = q.popleft()
+
+                if i == n-1:
+                    res.append(node.val)
+                
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+        return res
+        # O(n);O(n)
