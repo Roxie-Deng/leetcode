@@ -19,3 +19,5 @@ class Solution:
         traverse(root)
         # 理论上ans已从小到大排列
         return ans[k-1]
+        # O(n)
+        # space: 平衡BST O(logn), 链状O(n), 额外数组O(n) -> O(n)
