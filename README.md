@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/Roxie-Deng/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0283-move-zeroes](https://github.com/Roxie-Deng/leetcode/tree/master/0283-move-zeroes) |
 | [0647-palindromic-substrings](https://github.com/Roxie-Deng/leetcode/tree/master/0647-palindromic-substrings) |
+| [0763-partition-labels](https://github.com/Roxie-Deng/leetcode/tree/master/0763-partition-labels) |
 | [0908-middle-of-the-linked-list](https://github.com/Roxie-Deng/leetcode/tree/master/0908-middle-of-the-linked-list) |
 ## Binary Search
 |  |
@@ -104,6 +105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/Roxie-Deng/leetcode/tree/master/0011-container-with-most-water) |
 | [0055-jump-game](https://github.com/Roxie-Deng/leetcode/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Roxie-Deng/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0763-partition-labels](https://github.com/Roxie-Deng/leetcode/tree/master/0763-partition-labels) |
 ## Tree
 |  |
 | ------- |
@@ -220,6 +222,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/Roxie-Deng/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Roxie-Deng/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0560-subarray-sum-equals-k](https://github.com/Roxie-Deng/leetcode/tree/master/0560-subarray-sum-equals-k) |
+| [0763-partition-labels](https://github.com/Roxie-Deng/leetcode/tree/master/0763-partition-labels) |
 ## String
 |  |
 | ------- |
@@ -238,6 +241,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/Roxie-Deng/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Roxie-Deng/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0647-palindromic-substrings](https://github.com/Roxie-Deng/leetcode/tree/master/0647-palindromic-substrings) |
+| [0763-partition-labels](https://github.com/Roxie-Deng/leetcode/tree/master/0763-partition-labels) |
 | [3019-number-of-changing-keys](https://github.com/Roxie-Deng/leetcode/tree/master/3019-number-of-changing-keys) |
 ## Linked List
 |  |
