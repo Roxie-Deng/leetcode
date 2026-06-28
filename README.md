@@ -242,6 +242,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/Roxie-Deng/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0647-palindromic-substrings](https://github.com/Roxie-Deng/leetcode/tree/master/0647-palindromic-substrings) |
 | [0763-partition-labels](https://github.com/Roxie-Deng/leetcode/tree/master/0763-partition-labels) |
+| [1143-longest-common-subsequence](https://github.com/Roxie-Deng/leetcode/tree/master/1143-longest-common-subsequence) |
 | [3019-number-of-changing-keys](https://github.com/Roxie-Deng/leetcode/tree/master/3019-number-of-changing-keys) |
 ## Linked List
 |  |
@@ -340,6 +341,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/Roxie-Deng/leetcode/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/Roxie-Deng/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0647-palindromic-substrings](https://github.com/Roxie-Deng/leetcode/tree/master/0647-palindromic-substrings) |
+| [1143-longest-common-subsequence](https://github.com/Roxie-Deng/leetcode/tree/master/1143-longest-common-subsequence) |
 ## Math
 |  |
 | ------- |
