@@ -1,22 +1,19 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-         # find maximum of: min(height[l],height[r])*(r-l)
-        cur_max = a = h = 0
-        n = len(height)
-
-        # left, right pointers move towards each other to decrease (r-l)
-        l = 0
-        r = n-1
+        # max_area=min(height[l],height[r])*(r-l)
+        # r-l 必然会逐渐缩小
+        # 高尽量取更大
+        l,r = 0, len(height)-1
+        cur_max = 0
 
         while l<r:
-            h = min(height[l],height[r])
-            a = (r-l)*h
-            cur_max = max(cur_max,a)
-
-            if height[l] < height[r]: # left move
+            width = r-l
+            if height[l]<height[r]:
+                # 现在以左为高，算完面积收缩左边
+                cur_max = max(cur_max,height[l]*width)
                 l += 1
-            else: 
+            else:
+                cur_max = max(cur_max,height[r]*width)
                 r -= 1
-
         return cur_max
-            
+        # O(n);O(1)
