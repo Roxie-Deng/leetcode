@@ -19,7 +19,7 @@ class Solution:
             right = max(0,dfs(node.right))
             # nonlocal cur_max # 之前用的nonlocal是一个声明语句，不能和赋值写在同一行
 
-            # 关键：以当前节点为“顶端”的路径和（可以同时连接左右两边）
+            # 更新全局答案：以当前节点为顶端的完整路径（可以同时连接左右两边）
             self.cur_max =  max(self.cur_max, node.val + left + right)
             # 返回给父节点的单边贡献（只能选较大的那一边）
             return node.val + max(left,right)
