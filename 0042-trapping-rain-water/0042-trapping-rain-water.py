@@ -1,27 +1,29 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
-        # 求和（遍历i，找i左边/右边最高，取最小，减去i）-> O(n^2)
-        # 使用双指针，从两侧出发向中间走，动态更新左边最高和右边最高，每次只处理较矮的一侧，求和 (矮侧highest - height[矮侧下标])
+        # 能够接水是因为能形成凹槽：左柱，右柱，底
+        # 对于一根柱子i, 找到一根右柱j使得j比i+1...j-1都高（也就是说在[i,j]范围内，i眼中j最高，j眼中i最高）
+        # 装水范围[i+1,j-1],so i,j如果紧密相邻也是不行的
+        # 木桶原理高度min(height[i],height[j])
 
-        left = 0
-        right = len(height)-1
-
-        l_peak = r_peak = 0
-        total = 0
-
-        while left<right:
-            if height[left]<height[right]: # 左侧更矮,左侧决定蓄水量
-                if height[left] >= l_peak:
-                    l_peak = height[left]
-                else: # l_peak更高，水不会从左侧流出
-                    total += l_peak-height[left]
-                left += 1
-            else: # 右侧更矮
-                if height[right]>=r_peak:
-                    r_peak = height[right]
-                else:
-                    total += r_peak-height[right]
-                right -= 1
+        # 维护一个数组结构：记录j前见过的柱子，同时能够最快拿到i -> 栈
+        # 入栈前，把比当前柱子矮的全部弹出，结算水量，再入栈
         
-        return total
-        # O(n);O(1)
+        stack = []
+        n = len(height)
+        cur_sum = 0
+
+        for right in range(n):
+            while stack and height[right]>height[stack[-1]]:# 可能形成凹槽
+                # 开始出栈：1. 栈空掉
+                bottom = stack.pop()
+
+                if not stack: # 没有左柱
+                    break # 去找下一个右柱
+                
+                # 2. 栈没空，有底也有左柱
+                left = stack[-1]
+
+                cur_sum += (right-left-1)*(min(height[left],height[right])-height[bottom])
+            stack.append(right) # 矮柱，直接入栈
+        return cur_sum
+        # O(n);O(n)
