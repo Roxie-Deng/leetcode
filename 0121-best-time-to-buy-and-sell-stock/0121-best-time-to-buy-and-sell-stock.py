@@ -1,12 +1,15 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        min_price = prices[0]
-        max_diff = 0
+        # brutal: O(n^2)
+        # record min, max_profit
+        min_buy = prices[0]
+        max_profit = 0
+        n = len(prices)
 
-        for p in prices:
-            min_price = min(p, min_price)
-            max_diff = max(p-min_price, max_diff)
+        for i in range(1,n):
+            min_buy = min(min_buy,prices[i])
+            max_profit = max(max_profit, prices[i]-min_buy)
+        
+        return max_profit
+        # O(n);O(1)
 
-        return max_diff
-
-        # O(n); O(1)
