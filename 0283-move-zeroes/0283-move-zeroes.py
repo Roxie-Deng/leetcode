@@ -3,13 +3,17 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        # 双指针，slow:已排列好的序列尾部（左边全为非零序列）,fast:未排列好的序列头部
-        slow = 0
+        # 暴力：遇到0就把它和后面的非零数交换，like bubbling
+        # 双指针: slow挨个遍历all，fast挨个遍历non zeroes
+        # 把fast放到slow的位置，fast走完后，再把nums剩下的位置都填上0
 
-        for fast in range(len(nums)):
+        n = len(nums)
+        slow = 0 # [0,len(nums_non_zeroes)]
+        for fast in range(n):
             if nums[fast] != 0:
-                nums[slow], nums[fast] = nums[fast], nums[slow]
+                nums[slow] = nums[fast]
                 slow += 1
-            fast += 1
-        
-        # O(n); O(1):原地交换
+        # 循环结束后slow = len(nums_non_zeroes)
+        for i in range(slow,n):
+            nums[i] = 0
+        # O(n);O(1)
