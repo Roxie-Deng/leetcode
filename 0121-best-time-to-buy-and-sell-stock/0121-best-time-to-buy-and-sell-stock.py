@@ -6,9 +6,9 @@ class Solution:
         max_profit = 0
         n = len(prices)
 
-        for i in range(1,n):
-            min_buy = min(min_buy,prices[i])
-            max_profit = max(max_profit, prices[i]-min_buy)
+        for p in prices:
+            min_buy = min(min_buy,p)
+            max_profit = max(max_profit, p-min_buy)
         
         return max_profit
         # O(n);O(1)
