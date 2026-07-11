@@ -1,42 +1,43 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        # pick One Num + solve 2Sum on remaining array
-        # if sorted: two pointers moving toward each other
-        nums.sort()
+        # pick out ONE NUM(for loop), solve 2Sum
+        # if hash 2Sum, hard to delete duplicates(we want value instead of index here)
+        # To skip duplicate items and move pointers, we sort first
+
+        # 2Sum + 2SumII(sorted)
+        # 固定一个数+双指针
+        # 外层循环：固定第一个数
+        # 内层循环：从剩余数组的最小值和最大值开始，左指针i+1，右指针n-1向中间移动
+        nums.sort() # O(nlogn);O(n)
         n = len(nums)
-        ans =[]
+        ans = []
 
-        for i in range(n-2):
-            x = nums[i]
-            if i > 0 and x == nums[i-1]: #skip duplicates
-                continue # move onto the next iteration
-            if x + nums[i+1] + nums[i+2] > 0: # x is too big
-                break 
-            if x + nums[-2] + nums[-1] < 0: # x is too small
+        for i in range(n-2): # loop through i, NOW PROBLEM: nums[j]+nums[k] = -nums[i], just like 2SumII
+            if i>0 and nums[i-1] == nums[i]: # skip duplicates
                 continue
-
-            # 2sum
-            l = i+1
-            r = n-1
-
-            while l<r:
-                s = nums[l]+nums[r]+x
-                if s < 0:
-                    l += 1
-                elif s > 0:
-                    r -= 1
+            if nums[i]+nums[i+1]+nums[i+2]>0: # add two smallest
+                break # non-decreasing;往后走不可能再找到满足题目的i
+            if nums[i]+nums[n-2]+nums[n-1]<0: # add two biggest
+                continue # nums[i] is too small; i should be bigger
+            
+            # i is likely to generate triplets we want
+            # begin to move 2 pointers
+            left,right = i+1,n-1
+            while left<right:
+                s = nums[i]+nums[left]+nums[right]
+                if s == 0:
+                    ans.append([nums[i],nums[left],nums[right]])
+                    # skip the duplicates of nums[left] or nums[right]
+                    left += 1
+                    while left<right and nums[left] == nums[left-1]:
+                        left += 1
+                    right -= 1
+                    while left<right and nums[right] == nums[right+1]:
+                        right -= 1
+                elif s<0:
+                    left += 1
                 else:
-                    # record solution
-                    # move l & r to find the next solution while skiping duplicates
-                    ans.append([nums[i],nums[l],nums[r]])
-                    l += 1 # next candidate
-                    while l<r and nums[l] == nums[l-1]:
-                        l += 1
-                    r -= 1
-                    while l<r and nums[r] == nums[r+1]:
-                        r -= 1
-        
+                    right -= 1
         return ans
-# Time: O(n^2)
-# Space: O(1)
-        
+
+        # O(n^2);O(n)
