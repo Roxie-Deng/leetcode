@@ -1,15 +1,19 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int: 
-        # 以第i位结尾的最大子数组和 
-        # f(0) = nums[0] 
-        # f(i) = max(f(i-1),0) + nums[i] 
+        # prefix f(i)=到i为止的和
+        # f(i)最大-f(j)最小，if f(i)正f(j)负
+        # f(i) - 0, if f(i)负f(j)负
         n = len(nums)
+        prefix = [0]*(n+1)
 
-        cur = [0]*n
-        cur[0] = nums[0]
-
-        for i in range(1,n):
-            cur[i] = max(cur[i-1], 0) + nums[i]
+        for i in range(1,n+1):
+            prefix[i] = prefix[i-1] + nums[i-1]
         
-        return max(cur)
-        # O(n);O(1)
+        base = 0 
+        ans = float('-inf')
+        for i in range(1,n+1):
+            ans = max(ans, prefix[i]-base)
+            base = min(prefix[i],base)
+        return ans
+        # O(n);O(n)
+        
