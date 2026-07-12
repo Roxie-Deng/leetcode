@@ -7,12 +7,13 @@
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         ans = []
-        def inorder(node):
-            if node is None:
+        # left, root, right
+        def inorder(root):
+            if root is None:
                 return
-            inorder(node.left)
-            ans.append(node.val)
-            inorder(node.right)
+            inorder(root.left)
+            ans.append(root.val)
+            inorder(root.right)
         inorder(root)
         return ans
-        
+        # O(n); O(n)最坏成链
