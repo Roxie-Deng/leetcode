@@ -6,23 +6,26 @@
 #         self.right = right
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-        if root is None:
-            return []
+        # BFS
         ans = []
-        q = deque([root]) # 存储待访问的节点，root作为第一个待访问的节点
 
-        while q:
-            vals = [] # 存储节点值
-            for _ in range(len(q)): # 当前层的节点数
-                # 从队列中取出当前层节点
-                node = q.popleft()
-                vals.append(node.val)
-                # 把下一层节点加入队列
-                if node.left:
-                    q.append(node.left)
-                if node.right:
-                    q.append(node.right)
-            ans.append(vals)
+        if root is None:
+            return ans
+
+        # 分层处理，用队列最为合适，队首取出该层节点，队尾添加下层节点
+        dq = deque([root])
+
+        while dq:
+            level = [] # 每层需要一个答案容器
+
+            # 出队
+            for _ in range(len(dq)):
+                node = dq.popleft()
+                level.append(node.val) # 记录答案
+                if node.left: dq.append(node.left) 
+                if node.right: dq.append(node.right) 
+
+            # 入队
+            ans.append(level)
         return ans
-
-        # O(n); O(width)
+        # O(n); O(max_width) = O(n/2)
