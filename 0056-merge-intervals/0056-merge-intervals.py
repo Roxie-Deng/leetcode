@@ -1,12 +1,18 @@
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        intervals.sort(key=lambda interval:interval[0]) # 按左端点升序原地排序intervals
+        # start_i<=start_j<=end_i, [start_i,max(end_i,end,j)]
+        # 先升序排序，这样我们可以确保当前处理的区间要么与前面的合并，要么放在后面
+        # 维护一个结果列表merged，比较merged[-1].end 和 正在遍历的interval.start
 
-        ans = []
-        for interval in intervals: # 遍历待排序/合并区间
-            if ans and interval[0] <= ans[-1][1]: # ans不为空，且，待排序区间的左端点小于等于最后一个合并区间的右端点->合并
-                # 更新合并区间的右端点
-                ans[-1][1] = max(interval[1],ans[-1][1])
-            else:
-                ans.append(interval)
-        return ans
+        intervals.sort() # 默认按第一个元素排序 O(nlogn)
+
+        merged = []
+
+        for interval in intervals:
+            if not merged or interval[0] > merged[-1][1]:
+                merged.append(interval)
+            else: # interval.start <= merged[-1].end 有重叠，合并，更新merged[-1].end 
+                end = max(merged[-1][1],interval[1])
+                merged[-1][1] = end
+        return merged
+        # O(nlogn);O(n)
