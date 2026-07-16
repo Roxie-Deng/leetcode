@@ -1,21 +1,26 @@
 class Solution:
     def addStrings(self, num1: str, num2: str) -> str:
-        num1 = num1[::-1]
-        num2 = num2[::-1]
-        ans = []
-        carry = 0
-        i = 0
-
-        while i<len(num1) or i<len(num2) or carry: # 有任意一位数没处理完或者存在进位
-            digit1 = int(num1[i]) if i<len(num1) else 0
-            digit2 = int(num2[i]) if i<len(num2) else 0
-
-            carry, digit = divmod(digit1+digit2+carry,10)
-
-            ans.append(str(digit))
-
-            i += 1
+        if len(num1) > len(num2):
+            num1, num2 = num2, num1 # let num1 always short
         
-        return "".join(ans[::-1])
+        # 翻转num1, num2,之后的结果再翻转回来
+        s1 = num1[::-1] # 77
+        s2 = num2[::-1] # 654
+        carry = 0 
+        m,n = len(s1),len(s2)
+        # 填充s1至s2的长度 [m,n)
+        for _ in range(n-m):
+            s1 += "0"
 
-        # O(n); O(1)
+        res = [] # 先用一个list接收结果
+
+        for i in range(n):
+            # not convert the inputs to integers directly 但是没说可以转换字符
+            cur_sum = int(s1[i])+int(s2[i])+carry #7+6=13
+            carry, digit = divmod(cur_sum,10) # 1,3
+            res.append(str(digit)) # ["3"]
+        if carry:
+            res.append(str(carry))
+        return "".join(res[::-1])
+        # O(n); O(n)
+        
