@@ -5,23 +5,21 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        dummy = ListNode(0) #锚点
-        cur = dummy #当前指针
-    
-        # 2 lists have left elements
+        # l1, l2 同时走，val更小的接在merged上
+        # one list is finished, "merged“ + the other list remainings
+        dummy = ListNode()
+        cur = dummy
+
         while list1 and list2:
-            if list1.val < list2.val:
-                cur.next = list1
+            if list1.val<=list2.val:
+                cur.next = list1 # link
+                # move
                 list1 = list1.next
             else:
                 cur.next = list2
                 list2 = list2.next
-            cur = cur.next #当前指针向前移动
-        # only 1 list has left elements
-        if list1:
-            cur.next = list1
-        if list2:
-            cur.next = list2
+            cur = cur.next
         
+        cur.next = list1 or list2
         return dummy.next
         # O(n);O(1)
