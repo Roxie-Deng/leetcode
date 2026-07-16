@@ -6,13 +6,18 @@
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         # change all pointers' direction
-        prev = None
+        # pre - cur - nxt
+
+        pre = None
         cur = head
 
         while cur:
-            temp = cur.next
-            cur.next = prev # reverse
-            prev = cur # move nodes forward
-            cur = temp
-        
-        return prev
+            # 备份backup
+            nxt = cur.next
+            # 改向redirect
+            cur.next = pre
+            # 移动move
+            pre = cur
+            cur = nxt
+        return pre
+        # O(n);O(1)
