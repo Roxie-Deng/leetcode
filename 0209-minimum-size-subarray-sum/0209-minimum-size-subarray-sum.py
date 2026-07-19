@@ -1,17 +1,23 @@
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
-        min_len = len(nums)+1
-        left = 0
+        # brutal: 遍历，找到所有满足条件的subarray,找出shortest
+        # 滑动窗口，窗口内的和<target，移动右；满足窗口内的和>=target时，不断移动左，直到窗口无效
+
+        ans = float('inf')
         cur_sum = 0
+        left  = 0
 
-        # expand the window: cur_sum < target
-        # shrink the window: cur_sum >= target
+        for i in range(len(nums)):
+            if nums[i] >= target:
+                return 1
 
-        for right in range(len(nums)):
-            cur_sum += nums[right]
+            cur_sum += nums[i]
+        
+            # 满足窗口条件
             while cur_sum >= target:
-                min_len = min(min_len,right+1-left)
+                ans = min(ans,i-left+1)
                 cur_sum -= nums[left]
                 left += 1
-        
-        return 0 if min_len == len(nums)+1 else min_len
+
+        return ans if ans != float('inf') else 0
+        # O(n);O(1)
