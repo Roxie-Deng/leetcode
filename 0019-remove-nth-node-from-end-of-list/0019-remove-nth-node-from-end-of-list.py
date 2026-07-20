@@ -8,6 +8,7 @@ class Solution:
         # 找到要delete的节点在链表上的正数第几个
         # 1.链表长度
         dummy = ListNode(next = head)
+        '''
         cur = dummy
         length = 0
         while cur.next:
@@ -22,6 +23,20 @@ class Solution:
         nxt = pre.next.next # 备份 要去掉的点的后一位
         pre.next = nxt # 连接
 
+        return dummy.next
+        '''
+        # 继续优化：快慢指针，遍历一次
+        slow = fast = dummy
+
+        # fast先走n步；slow再和fast同步走，那么fast到终点时, slow到要删除的点
+        for _ in range(n):
+            fast = fast.next
+        
+        while fast.next:
+            slow = slow.next
+            fast = fast.next
+        
+        slow.next = slow.next.next
         return dummy.next
     
     # O(n);O(1)
