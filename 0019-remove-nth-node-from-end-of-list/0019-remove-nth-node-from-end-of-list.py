@@ -5,13 +5,22 @@
 #         self.next = next
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        left = right = dummy = ListNode(next=head)
-        for _ in range(n): # 生成n个数字，执行n次
-            right = right.next
-        while right.next: # right走到末尾时,left在倒数第n+1个节点位置
-            left = left.next
-            right = right.next
-        left.next = left.next.next
+        # 找到要delete的节点在链表上的正数第几个
+        # 1.链表长度
+        dummy = ListNode(next = head)
+        cur = dummy
+        length = 0
+        while cur.next:
+            length += 1
+            cur = cur.next
+        # 2.m-th from the start
+        # m = length - n + 1
+        pre = dummy
+        for _ in range(length - n):
+            pre = pre.next 
+        # 最后得到的pre是要去掉的点的前一位
+        nxt = pre.next.next # 备份 要去掉的点的后一位
+        pre.next = nxt # 连接
 
         return dummy.next
     
