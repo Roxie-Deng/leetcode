@@ -17,4 +17,4 @@ class Solution:
             # 记录长度
             cur_max = max(cur_max,right-left+1)
         return cur_max
-        # O(n) 每个char被访问一次；O(26)
+        # O(n) 每个char被访问一次；O(26) 哈希表大小受限于字符集
