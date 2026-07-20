@@ -9,4 +9,4 @@ class Solution:
         if root is None:
             return 0
         return 1+max(self.maxDepth(root.left),self.maxDepth(root.right))
-        # O(n);O(n)
+        # O(n);O(h), worst O(n)
