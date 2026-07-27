@@ -62,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/Roxie-Deng/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0661-image-smoother](https://github.com/Roxie-Deng/leetcode/tree/master/0661-image-smoother) |
 | [0713-subarray-product-less-than-k](https://github.com/Roxie-Deng/leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/Roxie-Deng/leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [0739-daily-temperatures](https://github.com/Roxie-Deng/leetcode/tree/master/0739-daily-temperatures) |
 | [0994-rotting-oranges](https://github.com/Roxie-Deng/leetcode/tree/master/0994-rotting-oranges) |
 | [1287-element-appearing-more-than-25-in-sorted-array](https://github.com/Roxie-Deng/leetcode/tree/master/1287-element-appearing-more-than-25-in-sorted-array) |
@@ -105,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/Roxie-Deng/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/Roxie-Deng/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0713-subarray-product-less-than-k](https://github.com/Roxie-Deng/leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/Roxie-Deng/leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
 ## Sorting
 |  |
 | ------- |
@@ -219,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/Roxie-Deng/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Roxie-Deng/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0713-subarray-product-less-than-k](https://github.com/Roxie-Deng/leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/Roxie-Deng/leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -386,6 +389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/Roxie-Deng/leetcode/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/Roxie-Deng/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0647-palindromic-substrings](https://github.com/Roxie-Deng/leetcode/tree/master/0647-palindromic-substrings) |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/Roxie-Deng/leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [1143-longest-common-subsequence](https://github.com/Roxie-Deng/leetcode/tree/master/1143-longest-common-subsequence) |
 ## Math
 |  |
@@ -512,4 +516,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Roxie-Deng/leetcode/tree/master/0239-sliding-window-maximum) |
+## Rolling Hash
+|  |
+| ------- |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/Roxie-Deng/leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
+## Hash Function
+|  |
+| ------- |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/Roxie-Deng/leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
 <!---LeetCode Topics End-->
