@@ -1,12 +1,19 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        # Multiple transactions allowed; think of a line chart, only take upward segments
-        max_profit = 0
+        # 问的是最优解，且存在明确的状态转移关系
+        # f(i) = f(i-1)， if prices[i] <= prices[i-1]
+        # f(i) = f(i-1) + prices[i]-prices[i-1]
+        # DP 问题
         n = len(prices)
+        dp = [0] *(n+1)
 
-        for i in range(1,n): # if n == 0, will skip
-            if prices[i]-prices[i-1] > 0:
-                max_profit += prices[i]-prices[i-1]
+        for i in range(1,n):
+            cur_pro = prices[i] - prices[i-1]
+            if cur_pro <= 0:
+                dp[i+1] = dp[i]
+            else:
+                dp[i+1] = dp[i] + cur_pro
+
+        return dp[n]
+        # O(n);O(n)
         
-        return max_profit
-        # O(n); O(1)
