@@ -524,4 +524,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/Roxie-Deng/leetcode/tree/master/0718-maximum-length-of-repeated-subarray) |
+## Bracket Sequences
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/Roxie-Deng/leetcode/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
